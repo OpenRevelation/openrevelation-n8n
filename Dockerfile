@@ -1,5 +1,5 @@
 
-FROM docker.n8n.io/n8nio/n8n:1.91.3
+FROM docker.n8n.io/n8nio/n8n:1.93.0
 USER root
 
 # Устанавливаем существующие зависимости + fontconfig (для управления шрифтами)
