@@ -13,7 +13,7 @@ RUN mkdir -p /usr/share/fonts/lora
 # в созданную директорию внутри образа Docker
 # Убедитесь, что путь 'assets/Lora-Medium.ttf' соответствует тому,
 # куда вы положили шрифт в своем репозитории относительно Dockerfile.
-COPY assets/Lora-Medium.ttf /usr/share/fonts/lora/Lora-Medium.ttf
+COPY assets/lora_collection/*.ttf /usr/share/fonts/lora/
 
 # Обновляем кэш шрифтов, чтобы система и ImageMagick "увидели" новый шрифт
 RUN fc-cache -f -v
